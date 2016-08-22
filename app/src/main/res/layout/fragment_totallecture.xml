@@ -1,0 +1,371 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="shivam.cvm.ui.fragment.totallecture"
+    android:background="@mipmap/mainbck">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Lectures Attendance"
+        android:id="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_gravity="left|top" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lecturetotal"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="NOTE : "
+        android:id="@+id/textView29"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="#B0171F"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Below 33.33% : Poor"
+        android:id="@+id/textView24"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="#B0171F"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Below 50.00% : Below Average"
+        android:id="@+id/textView25"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="#B0171F"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Below 75.00% : Average"
+        android:id="@+id/textView26"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="#B0171F"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Below 90.00% : Good"
+        android:id="@+id/textView27"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="#B0171F"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Below 100.00% : Excellent"
+        android:id="@+id/textView28"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textColor="#B0171F"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif" />
+    <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/Att"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="25dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_marginBottom="10dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/attendancesub1"-->
+                    <!--android:layout_below="@+id/sp5"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_weight="0.60" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/att1"-->
+                    <!--android:layout_above="@+id/att2"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.40"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_marginRight="8dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/uniform_lab"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/linearLayout33"-->
+                <!--android:background="#000000" />-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_marginBottom="10dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/attendancesub2"-->
+                    <!--android:layout_below="@+id/sp5"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.60"-->
+                    <!--android:layout_marginLeft="8dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/att2"-->
+                    <!--android:layout_above="@+id/att2"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.40"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_marginRight="8dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/uniform_lab"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/linearLayout34"-->
+                <!--android:background="#000000" />-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="10dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/attendancesub3"-->
+                    <!--android:layout_below="@+id/sp5"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.60"-->
+                    <!--android:layout_marginLeft="8dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/att3"-->
+                    <!--android:layout_above="@+id/att3"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.40"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_marginRight="8dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/uniform_lab"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/linearLayout35"-->
+                <!--android:background="#000000" />-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="10dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/attendancesub4"-->
+                    <!--android:layout_below="@+id/sp5"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.60"-->
+                    <!--android:layout_marginLeft="8dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/att4"-->
+                    <!--android:layout_above="@+id/att4"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.40"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_marginRight="8dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/uniform_lab"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/linearLayout36"-->
+                <!--android:background="#000000" />-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_marginBottom="10dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/attendancesub5"-->
+                    <!--android:layout_below="@+id/sp5"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.60"-->
+                    <!--android:layout_marginLeft="8dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/att5"-->
+                    <!--android:layout_above="@+id/att5"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.40"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_marginRight="8dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/uniform_lab"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/linearLayout37"-->
+                <!--android:background="#000000" />-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_marginBottom="10dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/attendancesub6"-->
+                    <!--android:layout_below="@+id/sp5"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.60"-->
+                    <!--android:layout_marginLeft="8dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:id="@+id/att6"-->
+                    <!--android:layout_above="@+id/att6"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:textColor="#ff070741"-->
+                    <!--android:layout_weight="0.40"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_marginRight="8dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/uniform_lab"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/linearLayout38"-->
+                <!--android:background="#000000" />-->
+        <!--</LinearLayout>-->
+</LinearLayout>

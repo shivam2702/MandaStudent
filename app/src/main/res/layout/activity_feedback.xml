@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shivam.cvm.ui.activity.feedback"
+    android:background="@mipmap/mainbck">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your Feedback"
+        android:id="@+id/feedbacktext"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_gravity="left|top" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/happy"
+        android:background="@drawable/happy"
+        android:layout_below="@+id/feedbacktext"
+        android:layout_alignLeft="@+id/feedbacktext"
+        android:layout_alignStart="@+id/feedbacktext" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/neutral"
+        android:background="@drawable/neutral"
+        android:layout_alignTop="@+id/happy"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sad"
+        android:background="@drawable/sad"
+        android:layout_below="@+id/happy"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

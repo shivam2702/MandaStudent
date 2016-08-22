@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="shivam.cvm.ui.fragment.assignment"
+    android:background="@mipmap/mainbck">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/linearLayout2"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_gravity="left|top">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Assignment Records"-->
+                <!--android:id="@+id/textView5"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#FFF" />-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" >-->
+
+                <!--&lt;!&ndash;<com.rey.material.widget.Spinner&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/Material.Widget.Spinner"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/spinnerassignment"&ndash;&gt;-->
+                    <!--&lt;!&ndash;spn_label="Select Assignment Number"&ndash;&gt;-->
+                    <!--&lt;!&ndash;app:rd_style="@style/Material.Drawable.Ripple.Wave"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:measureAllChildren="true" />&ndash;&gt;-->
+                <!--<Spinner-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:id="@+id/spinnerassignment"-->
+                    <!--android:layout_alignTop="@+id/textView82"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_toRightOf="@+id/textView82"-->
+                    <!--android:layout_toEndOf="@+id/textView82"-->
+                    <!--android:gravity="fill"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:spinnerMode="dialog" />-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Assignment Records"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_gravity="center_horizontal" />
+
+    <ExpandableListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/exp_listview"
+    android:layout_marginTop="10dp">
+
+</ExpandableListView>
+</LinearLayout>
